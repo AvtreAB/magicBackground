@@ -7,6 +7,7 @@
     width: 100%;
     background-image: url('/img/backup-image.jpg'); /* Change this to your backup image. */
     background-size: cover;
+    overflow: hidden;
 }
 
 .video-background.parallax {
@@ -24,16 +25,12 @@
     }
 }
 
-@media (min-aspect-ratio: 16/9) {
-	.video-background video {
-		width: 100%;
-		height: auto;
-	}
+.video-background.set-height video {
+    width: auto;
+    height: 100%;
 }
 
-@media (max-aspect-ratio: 16/9) {
-	.video-background video {
-		width: auto;
-		height: 100%;
-	}
+.video-background.set-width video {
+    width: 100%;
+    height: auto;
 }
