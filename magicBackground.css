@@ -1,0 +1,39 @@
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-image: url('path/to/backup-image.jpg'); /* Change this to your backup image. */
+    background-size: cover;
+}
+
+.video-background.parallax {
+    position: fixed !important;
+}
+
+.video-background video {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    .video-background video {
+        display: block !important;
+    }
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .video-background video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .video-background video {
+        width: auto;
+        height: 100%;
+    }
+}
