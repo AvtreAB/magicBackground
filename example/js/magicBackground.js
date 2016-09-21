@@ -47,5 +47,12 @@ var resize = function(event) {
 	}
 };
 
-addEvent(window, "resize", resize);
+var onResize = function(event) {
+	resize(event);
+	setTimeout(function(){
+		resize(event);
+	}, 30)
+};
+
+addEvent(window, "resize", onResize);
 addEvent(window, "load", resize);
