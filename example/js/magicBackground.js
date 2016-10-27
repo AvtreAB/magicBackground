@@ -51,8 +51,8 @@ var onResize = function(event) {
 	resize(event);
 	setTimeout(function(){
 		resize(event);
-	}, 30)
+	}, 50)
 };
 
 addEvent(window, "resize", onResize);
-addEvent(window, "load", resize);
+addEvent(window, "load", onResize);
