@@ -1,3 +1,5 @@
+/* magicBackground https://github.com/AvtreAB/magicBackground */
+
 .video-background {
     position: absolute;
     top: 0;
@@ -5,7 +7,7 @@
     z-index: -1;
     height: 100%;
     width: 100%;
-    background-image: url('/img/backup-image.jpg'); /* Change this to your backup image. */
+    background-image: url('/path/to/backup-image.jpg'); /* Change this to your backup image. */
     background-size: cover;
     overflow: hidden;
 }

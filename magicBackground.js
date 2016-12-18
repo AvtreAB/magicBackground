@@ -1,3 +1,5 @@
+/* magicBackground https://github.com/AvtreAB/magicBackground */
+
 var MagicBackground = function() {
 	this.elements = document.getElementsByClassName("video-background");
 	
