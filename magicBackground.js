@@ -17,6 +17,10 @@ var MagicBackground = function() {
 		if(videoElement) {
 			this.addEvent(videoElement, "loadedmetadata", this.resize.bind(this));
 		}
+		
+		if(videoElement.readyState > 0) {
+			this.resize();
+		}
 	}
 	
 	this.addEvent(window, "resize", this.resize.bind(this));
